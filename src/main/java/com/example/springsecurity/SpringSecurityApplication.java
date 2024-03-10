@@ -27,6 +27,7 @@ public class SpringSecurityApplication implements CommandLineRunner {
 		if(null == adminAccount){
 			User user = new User();
 
+			//Set admin account details
 			user.setEmail("admin@gmail.com");
 			user.setFirstname("admin");
 			user.setLastname("admin");
