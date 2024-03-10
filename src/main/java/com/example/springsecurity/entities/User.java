@@ -2,7 +2,6 @@ package com.example.springsecurity.entities;
 
 import jakarta.persistence.*;
 import lombok.Data;
-import org.springframework.boot.autoconfigure.web.WebProperties;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -12,8 +11,8 @@ import java.util.List;
 
 @Data
 @Entity
-@Table(name = "student")
-public class Student implements UserDetails{
+@Table(name = "user")
+public class User implements UserDetails{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
