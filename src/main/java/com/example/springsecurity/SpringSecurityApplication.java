@@ -24,7 +24,6 @@ public class SpringSecurityApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		User adminAccount = userRepository.findByRole(Role.ADMIN);
 
-		// if admin not in db create a admin acc when initially run the app
 		if(null == adminAccount){
 			User user = new User();
 
